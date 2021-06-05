@@ -9,6 +9,8 @@
   <title>To-do V3</title>
 
   <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('node_modules/@fortawesome/fontawesome-free/css/all.css') }}">
+  
 </head>
 
 <body class="vw-100 vh-100">
