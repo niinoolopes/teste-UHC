@@ -7,7 +7,7 @@ export const api = async function ({ method, url, body = {} }) {
 
   const config = {
     method: method,
-    // baseURL: '/lab-laravel-vue2/api',
+    // baseURL: '/teste-UHC/api',
     baseURL: '/portifolio/teste-UHC/api',
     url,
     data: body,

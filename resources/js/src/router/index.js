@@ -6,7 +6,8 @@ vue.use(VueRouter)
 
 const routerInstanci = new VueRouter({
   mode: 'history',
-  base: 'lab-laravel-vue2',
+  // base: 'teste-UHC',
+  base: 'portifolio/teste-UHC',
   routes
 })
 
