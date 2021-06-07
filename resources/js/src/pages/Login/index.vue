@@ -32,9 +32,6 @@ export default {
       password: "",
     };
   },
-  mounted() {
-    console.log(this.$store.state);
-  },
   methods: {
     async onLogin(event) {
       event.preventDefault();

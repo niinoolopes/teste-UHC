@@ -54473,9 +54473,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       password: ""
     };
   },
-  mounted: function mounted() {
-    console.log(this.$store.state);
-  },
   methods: {
     onLogin: function onLogin(event) {
       var _this = this;
