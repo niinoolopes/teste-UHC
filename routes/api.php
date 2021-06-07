@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\TaskController;
+use App\Http\Controllers\UserController;
+use App\Http\Middleware\NNToken;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,4 +19,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+
+Route::post('/login', [UserController::class, 'login']);
+Route::post('/register', [UserController::class, 'store']);
+
+Route::middleware([NNToken::class])->group(function () {
+    Route::apiResource('/perfil', [UserController::class])->only(['update', 'destroy']);
+    Route::apiResource('/task', [TaskController::class]);
 });
