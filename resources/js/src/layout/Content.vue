@@ -1,5 +1,5 @@
 <template>
-  <div class="container col">
+  <div class="container col p-2 p-sm-3">
     <slot></slot>
   </div>
 </template>
@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style scoped>
+div {
+  position: relative;
+}
 div > div {
   height: 100%;
 }

@@ -1,3 +1,7 @@
 export default {
-  login: false
+  login: false,
+  loading: false,
+  alert: false,
+  user: {},
+  tasks: []
 }

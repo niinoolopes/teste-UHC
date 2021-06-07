@@ -1,6 +1,8 @@
 <template>
-  <footer class="container d-flex justify-content-center align-items-center text-white">
-    @niinoo.lopes - 2021
+  <footer class="container bg-light d-flex justify-content-center align-items-center p-2">
+    
+    <span class="text-secondary fs-6">@niinoo.lopes - 2021</span>
+    
   </footer>
 </template>
 
@@ -11,8 +13,4 @@ export default {
 </script>
 
 <style scoped>
-footer {
-  min-height: 3rem;
-  background: var(--bs-gray);
-}
 </style>

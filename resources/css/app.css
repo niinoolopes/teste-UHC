@@ -1,1 +1,13 @@
-@import url("../../node_modules/bootstrap//dist/css/bootstrap.min.css");
+@import url("../../node_modules/bootstrap/dist/css/bootstrap.min.css");
+
+th,
+td {
+    vertical-align: middle;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+ul,
+li {
+    list-style: none;
+}
