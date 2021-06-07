@@ -28,8 +28,8 @@ import { socialMediaAuth } from "../../service/auth";
 export default {
   data() {
     return {
-      email: "niinoolopes0@gmail.com",
-      password: "123",
+      email: "",
+      password: "",
     };
   },
   mounted() {
