@@ -54469,8 +54469,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      email: "niinoolopes0@gmail.com",
-      password: "123"
+      email: "",
+      password: ""
     };
   },
   mounted: function mounted() {
