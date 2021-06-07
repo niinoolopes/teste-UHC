@@ -55184,7 +55184,8 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_2__.default);
 var routerInstanci = new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
   mode: 'history',
-  base: 'lab-laravel-vue2',
+  // base: 'teste-UHC',
+  base: 'portifolio/teste-UHC',
   routes: _routes__WEBPACK_IMPORTED_MODULE_0__.default
 });
 routerInstanci.beforeEach(function (to, from, next) {
@@ -55282,7 +55283,7 @@ var api = /*#__PURE__*/function () {
             });
             config = {
               method: method,
-              // baseURL: '/lab-laravel-vue2/api',
+              // baseURL: '/teste-UHC/api',
               baseURL: '/portifolio/teste-UHC/api',
               url: url,
               data: body
