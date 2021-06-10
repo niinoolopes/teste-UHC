@@ -54528,7 +54528,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
-        var _yield$socialMediaAut, displayName, email, _yield$_this2$validaE, message, data;
+        var _yield$socialMediaAut, displayName, email, _yield$_this2$validaE, message, data, token;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
           while (1) {
@@ -54548,10 +54548,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _yield$_this2$validaE = _context2.sent;
                 message = _yield$_this2$validaE.message;
                 data = _yield$_this2$validaE.data;
+                token = _yield$_this2$validaE.token;
 
                 if (message == "usuário encontrado.") {
                   _this2.handleLogin({
-                    user: data
+                    user: data,
+                    token: token
                   });
                 } else {
                   _this2.createNewUser({
@@ -54560,7 +54562,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   });
                 }
 
-              case 11:
+              case 12:
               case "end":
                 return _context2.stop();
             }

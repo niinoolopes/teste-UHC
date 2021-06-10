@@ -58,10 +58,10 @@ export default {
     async onGoogle() {
       const { displayName, email } = await socialMediaAuth("googleProvider");
 
-      const { message, data } = await this.validaEmail(email);
+      const { message, data, token} = await this.validaEmail(email);
 
       if (message == "usuário encontrado.") {
-        this.handleLogin({ user: data });
+        this.handleLogin({ user: data, token });
       } else {
         this.createNewUser({ name: displayName, email });
       }
